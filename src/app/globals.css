@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -12,15 +12,53 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: "Heraldic Shadows";
+  src: url("/fonts/Heraldic Shadows.woff2");
+}
+
+@font-face {
+  font-family: "Technor";
+  src: url("/fonts/Technor-Variable.woff2");
+}
+
+@utility font-main {
+  font-family: "Heraldic Shadows";
+}
+
+@utility font-secondary {
+  font-family: "Technor";
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.vignette {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 85%,
+    rgba(0, 0, 0, 0.4)
+  );
+}
+
+.floating-nav .navBg {
+  background: #fff;
+}
+
+.floating-nav .navContainer {
+  filter: drop-shadow(0px -25px 40px rgba(0,0,0,0.3));
 }
