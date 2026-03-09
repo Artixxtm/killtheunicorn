@@ -1,5 +1,14 @@
 .customClipHexa {
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
 }
 
 .customClipHexaWide {
@@ -16,6 +25,7 @@
 }
 
 .customClipHexaMobile {
+  transform: translate3d(0, 0, 0);
   clip-path: polygon(
     16.6px 0,
     calc(100% - 16.6px) 0,

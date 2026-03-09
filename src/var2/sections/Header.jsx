@@ -7,14 +7,14 @@ import Border from "../components/Border";
 
 const Header = () => {
   return (
-    <div className="w-full h-screen overflow-hidden relative flex flex-col justify-center items-center p-5">
+    <div className="w-full h-screen overflow-hidden relative flex flex-col justify-center items-center p-5 isolate">
       <ParallaxImage
         src={"/bg.jpg"}
         width={0}
         height={0}
         sizes="100vw"
         alt="bg"
-        className="w-full h-full object-cover absolute inset-0 -z-1 contrast-110"
+        className="w-full h-full object-cover absolute inset-0 z-0 contrast-110"
       />
 
       <div className="w-fit h-auto flex flex-col gap-2 items-start justify-start relative -top-5">
