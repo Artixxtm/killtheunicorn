@@ -11,7 +11,7 @@ const Border = () => {
         width={0}
         height={0}
         loading="eager"
-        className="absolute h-full w-10 md:left-0 -left-1 top-0 object-cover"
+        className="absolute h-full w-10 md:left-0 -left-2.5 top-0 object-cover"
       />
       <Image
         src="/border/right.png"
@@ -20,7 +20,7 @@ const Border = () => {
         width={0}
         height={0}
         loading="eager"
-        className="absolute h-full w-10 md:right-0 -right-1 top-0 object-cover"
+        className="absolute h-full w-10 md:right-0 -right-2.5 top-0 object-cover"
       />
       <Image
         src="/border/top.png"
@@ -29,7 +29,7 @@ const Border = () => {
         width={0}
         height={0}
         loading="eager"
-        className="absolute h-10 w-full left-0 md:top-0 -top-1 object-cover"
+        className="absolute h-10 w-full left-0 md:top-0 -top-2.5 object-cover"
       />
       <Image
         src="/border/bottom.png"
@@ -38,7 +38,7 @@ const Border = () => {
         width={0}
         height={0}
         loading="eager"
-        className="absolute h-10 w-full left-0 md:bottom-0 -bottom-1 object-cover"
+        className="absolute h-10 w-full left-0 md:bottom-0 -bottom-2.5 object-cover"
       />
     </div>
   );

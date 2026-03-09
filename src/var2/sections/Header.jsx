@@ -65,7 +65,7 @@ const Header = () => {
         height={0}
         sizes="100vw"
         loading="eager"
-        className="w-full xl:max-w-247.5 max-w-170 h-auto object-contain absolute left-1/2 top-1/2 -translate-x-1/2 md:-translate-y-[calc(50%-50px)] -translate-y-[calc(50%-25px)] mix-blend-soft-light md:opacity-60 opacity-85"
+        className="w-full xl:max-w-247.5 max-w-170 h-auto object-contain absolute left-1/2 top-1/2 -translate-x-1/2 md:-translate-y-[calc(50%-50px)] -translate-y-[calc(50%-25px)] customMix md:opacity-60 opacity-85"
       />
 
       <Border />
