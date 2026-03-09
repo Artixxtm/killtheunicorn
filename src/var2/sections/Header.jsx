@@ -19,7 +19,7 @@ const Header = () => {
 
       <div className="w-fit h-auto flex flex-col gap-2 items-start justify-start relative -top-5">
         <div className="w-fit h-auto flex flex-col items-center relative z-1">
-          <div className="w-full flex justify-between items-center gap-5 h-auto text-black x:text-3xl md:text-xl text-lg mb-4 tracking-wide">
+          <div className="w-full flex justify-between items-center gap-5 h-auto text-black xl:text-2xl md:text-xl text-lg mb-4 tracking-wide">
             <h3 className="font-secondary font-medium">
               30<span className="font-main">.</span>05
               <span className="font-main">.</span>2026

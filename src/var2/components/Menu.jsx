@@ -42,10 +42,10 @@ const Menu = () => {
       ref={navContainerRef}
       className="top-7.5 fixed left-1/2 -translate-x-1/2 h-20 w-fit z-10"
     >
-      <div className="h-full relative navContainer transition-all duration-350">
-        <div className="w-full h-full absolute inset-0 navBg bg-white/0 customClipHexaWide transition-all duration-350" />
+      <div className="h-full relative navContainer transition-all duration-350 isolate">
+        <div className="w-full h-full absolute inset-0 navBg bg-white/0 transition-all duration-250" />
 
-        <div className="inline-flex h-full md:px-10 px-6 py-2.5 relative items-center gap-14 justify-between">
+        <div className="inline-flex h-full md:px-10 px-6 py-2.5 relative items-center md:gap-24 gap-14 justify-between">
           <div className="flex items-center gap-4 w-fit h-auto text-black">
             <FaLinkedinIn
               size={22}
@@ -59,7 +59,7 @@ const Menu = () => {
 
           <div className="w-25.5 h-full">
             <Image
-              src={"/logo.png"}
+              src={"/logo-c.png"}
               width={102}
               height={60}
               alt="logo"
@@ -69,7 +69,7 @@ const Menu = () => {
             />
           </div>
 
-          <div className="md:w-14 w-10 h-4.5 shrink-0 flex flex-col justify-between items-center cursor-pointer hover:opacity-100 opacity-50 transition-opacity duration-250 group">
+          <div className="md:w-12 w-10 h-4.5 shrink-0 flex flex-col justify-between items-center cursor-pointer hover:opacity-100 opacity-50 transition-opacity duration-250 group">
             <div className="w-full h-0.5 bg-black group-hover:w-[60%] transition-all duration-250 ml-auto" />
             <div className="w-full h-0.5 bg-black" />
             <div className="w-full h-0.5 bg-black group-hover:w-[60%] transition-all duration-250 mr-auto" />

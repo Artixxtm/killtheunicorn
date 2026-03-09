@@ -4,14 +4,14 @@ import React from "react";
 const Border = () => {
   return (
     <div className="w-full h-screen absolute inset-0 pointer-events-none">
-      {/* <Image
+      <Image
         src="/border/left.png"
         alt="left side"
         sizes="100vw"
         width={0}
         height={0}
         loading="eager"
-        className="absolute h-full w-10 md:left-0 -left-2.5 top-0 object-cover"
+        className="absolute h-full w-10 -left-2 top-0 md:block hidden object-cover"
       />
       <Image
         src="/border/right.png"
@@ -20,7 +20,7 @@ const Border = () => {
         width={0}
         height={0}
         loading="eager"
-        className="absolute h-full w-10 md:right-0 -right-2.5 top-0 object-cover"
+        className="absolute h-full w-10 -right-2 top-0 md:block hidden object-cover"
       />
       <Image
         src="/border/top.png"
@@ -29,8 +29,8 @@ const Border = () => {
         width={0}
         height={0}
         loading="eager"
-        className="absolute h-10 w-full left-0 md:top-0 -top-2.5 object-cover"
-      /> */}
+        className="absolute h-10 w-full left-0 -top-2 object-cover"
+      />
       <Image
         src="/border/bottom.png"
         alt="under side"
@@ -38,7 +38,7 @@ const Border = () => {
         width={0}
         height={0}
         loading="eager"
-        className="absolute h-10 w-full left-0 md:bottom-0 -bottom-2.5 object-cover"
+        className="absolute h-10 w-full left-0 -bottom-2 object-cover"
       />
     </div>
   );

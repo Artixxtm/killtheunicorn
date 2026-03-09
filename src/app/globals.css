@@ -55,14 +55,37 @@ body {
   );
 }
 
+.navBg {
+  -webkit-clip-path: polygon(
+    20.4px 0,
+    calc(100% - 20.4px) 0,
+    100% 20.4px,
+    100% calc(100% - 20.4px),
+    calc(100% - 20.4px) 100%,
+    20.4px 100%,
+    0 calc(100% - 20.4px),
+    0 20.4px
+  );
+  clip-path: polygon(
+    20.4px 0,
+    calc(100% - 20.4px) 0,
+    100% 20.4px,
+    100% calc(100% - 20.4px),
+    calc(100% - 20.4px) 100%,
+    20.4px 100%,
+    0 calc(100% - 20.4px),
+    0 20.4px
+  );
+}
+
 .floating-nav .navBg {
-  background: #fff;
+  background: #ffffff;
+  z-index: -1;
 }
 
 .floating-nav .navContainer {
-  filter: drop-shadow(0px -25px 40px rgba(0,0,0,0.3));
+  filter: drop-shadow(0px -25px 40px rgba(0, 0, 0, 0.3));
 }
-
 
 .customMix {
   mix-blend-mode: soft-light;
