@@ -4,7 +4,7 @@ import React from "react";
 const Border = () => {
   return (
     <div className="w-full h-screen absolute inset-0 pointer-events-none">
-      <Image
+      {/* <Image
         src="/border/left.png"
         alt="left side"
         sizes="100vw"
@@ -30,7 +30,7 @@ const Border = () => {
         height={0}
         loading="eager"
         className="absolute h-10 w-full left-0 md:top-0 -top-2.5 object-cover"
-      />
+      /> */}
       <Image
         src="/border/bottom.png"
         alt="under side"
