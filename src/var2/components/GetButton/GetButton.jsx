@@ -6,7 +6,7 @@ import "./GetButton.css";
 
 const GetButton = () => {
   return (
-    <button className="xl:w-78 w-68 xl:h-16 h-14 fixed md:bottom-12.5 bottom-8 left-1/2 -translate-x-1/2 drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] z-10 backdrop-blur-md rounded-md group hover:-translate-y-1.5 transition-transform duration-250">
+    <button className="xl:w-78 w-68 xl:h-16 h-14 fixed md:bottom-12.5 bottom-8 left-1/2 -translate-x-1/2 z-10 backdrop-blur-md rounded-md group hover:-translate-y-1.5 transition-transform duration-250"> {/* drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)] */}
       <div className="w-full h-full relative xl:customClipHexaWide customClipHexaMobile cursor-pointer">
         <div className="w-full h-full absolute inset-0 bg-[#ffea00] group-hover:bg-[#ffffff] transition-colors duration-250" />
         <div className="w-full h-full flex items-center justify-between px-2 relative z-1">
