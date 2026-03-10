@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 
-const Border = () => {
+const Border = ({fullscreen = false}) => {
   return (
-    <div className="w-full h-screen absolute inset-0 pointer-events-none">
+    <div className={`w-full ${fullscreen ? 'h-screen' : 'h-full'} absolute inset-0 pointer-events-none`}>
       <Image
         src="/border/left.png"
         alt="left side"

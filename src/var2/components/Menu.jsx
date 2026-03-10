@@ -42,10 +42,10 @@ const Menu = () => {
       ref={navContainerRef}
       className="top-7.5 fixed left-1/2 -translate-x-1/2 h-20 w-fit z-10"
     >
-      <div className="h-full relative navContainer transition-all duration-350 isolate">
+      <div className="h-full relative navContainer backdrop-blur-none rounded-lg transition-all duration-350 isolate">
         <div className="w-full h-full absolute inset-0 navBg bg-white/0 transition-all duration-250" />
 
-        <div className="inline-flex h-full md:px-10 px-6 py-2.5 relative items-center md:gap-24 gap-14 justify-between">
+        <div className="inline-flex h-full md:px-10 px-6 py-2.5 relative items-center md:gap-34 gap-14 justify-between">
           <div className="flex items-center gap-4 w-fit h-auto text-black">
             <FaLinkedinIn
               size={22}

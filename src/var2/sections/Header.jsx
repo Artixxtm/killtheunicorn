@@ -14,7 +14,8 @@ const Header = () => {
         height={0}
         sizes="100vw"
         alt="bg"
-        className="w-full h-full object-cover absolute inset-0 z-0 contrast-110"
+        draggable={false}
+        className="w-full h-full object-cover absolute inset-0 z-0 contrast-110 pointer-events-none"
       />
 
       <div className="w-fit h-auto flex flex-col gap-2 items-start justify-start relative -top-5">
@@ -29,7 +30,7 @@ const Header = () => {
           </div>
           <h1
             aria-label="Real Startup Conference"
-            className="w-fit h-auto leading-[90%] xl:text-[7rem] md:text-7xl text-5xl text-center uppercase text-black"
+            className="w-fit h-auto leading-[90%] xl:text-[7rem] md:text-7xl text-5xl text-center tracking-wide uppercase text-black"
           >
             <span className="font-main">R</span>
             <span className="font-secondary font-bold">e</span>
@@ -50,10 +51,11 @@ const Header = () => {
           </h1>
 
           <p className="w-fit font-secondary uppercase font-normal opacity-75 xl:text-base md:text-sm text-xs text-black text-center mt-6">
-            A community of young entrepreneurs, creatives and <br />
-            builders. No bullshit. No unicorn myths. Just{" "}
+            A gathering for founders, entrepreneurs, creatives<br className="md:hidden block" />and builders.
+            <br className="md:block hidden" />
+            No bullshit. No unicorn myths. Just{" "}
             <br className="md:hidden block" />
-            people building <br className="md:block hidden" />
+            people building 
             real things.
           </p>
         </div>
@@ -65,10 +67,11 @@ const Header = () => {
         height={0}
         sizes="100vw"
         loading="eager"
-        className="w-full xl:max-w-247.5 max-w-170 h-auto object-contain absolute left-1/2 top-1/2 -translate-x-1/2 md:-translate-y-[calc(50%-50px)] -translate-y-[calc(50%-25px)] customMix md:opacity-60 opacity-85"
+        draggable={false}
+        className="w-full xl:max-w-247.5 max-w-170 h-auto object-contain absolute left-1/2 top-1/2 -translate-x-1/2 md:-translate-y-[calc(50%-50px)] -translate-y-[calc(50%-25px)] customMix md:opacity-60 opacity-85 pointer-events-none"
       />
 
-      <Border />
+      <Border fullscreen={true} />
     </div>
   );
 };

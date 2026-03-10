@@ -79,12 +79,17 @@ body {
 }
 
 .floating-nav .navBg {
-  background: #ffffff;
+  background: #ffffffbe;
   z-index: -1;
 }
 
 .floating-nav .navContainer {
-  filter: drop-shadow(0px -25px 40px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px -25px 30px rgba(0, 0, 0, 0.2));
+}
+
+.floating-nav .navContainer {
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
 }
 
 .customMix {
